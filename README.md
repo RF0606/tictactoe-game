@@ -17,6 +17,13 @@ A browser-based Tic Tac Toe game. No installation required — just open one fil
 | **2 Players** | Two people take turns on the same screen |
 | **vs CPU** | Play against an AI opponent |
 
+### CPU Difficulty (vs CPU mode only)
+
+| Level | Behaviour |
+|---|---|
+| **Easy** | CPU picks a random empty cell |
+| **Hard** | CPU plays a perfect strategy using minimax — cannot be beaten, only drawn |
+
 ### Rules
 
 - The board is a 3×3 grid.
@@ -25,23 +32,28 @@ A browser-based Tic Tac Toe game. No installation required — just open one fil
 - The first player to get **3 marks in a row** (horizontally, vertically, or diagonally) wins.
 - If all 9 cells are filled with no winner, the game is a **draw**.
 
+### Player Names
+
+Click either player name in the scoreboard to rename them. The name updates in all status messages immediately. In vs CPU mode the O label is locked to "CPU".
+
 ### Controls
 
 | Button | Action |
 |---|---|
 | **New Game** | Clear the board and start a fresh round (scores are kept) |
+| **Undo** | Revert the last move — available in 2-player mode only |
 | **Reset Score** | Clear the board and reset all scores to zero |
-| **2 Players / vs CPU** | Switch game mode (resets the current game) |
+| **♪ Sound** | Toggle sound effects on/off |
 
 ### Scoring
 
-The scoreboard at the bottom tracks **X Wins**, **O Wins**, and **Draws** across multiple rounds. Scores carry over until you click **Reset Score**.
+The scoreboard tracks **X Wins**, **O Wins**, and **Draws** across rounds. Scores carry over until you click **Reset Score**. The result of the last completed round is shown below the controls.
 
 ### Tips
 
-- In **vs CPU** mode the AI plays a perfect strategy using the minimax algorithm — it cannot be beaten, only drawn.
-- Aim for the **centre or corners** first to maximize your winning options.
-- Winning cells will **pulse** to highlight the result at the end of each round.
+- Aim for the **centre or corners** first to maximise your winning options against a human opponent.
+- On **Easy** CPU you can win — on **Hard** the best you can achieve is a draw.
+- Winning cells **pulse** to highlight the result at the end of each round.
 
 ## Requirements
 
